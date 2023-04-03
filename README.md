@@ -13,7 +13,7 @@ Mini projet Docker avec pour but de mettre en place notre site web Angular avec 
 Pour déployer ce projet, exécutez
 
 ```bash
-  cd Da Silva Eduardo Mini projet
+  cd Da Projet docker
   docker-compose build
   docker-compose up
 ```
