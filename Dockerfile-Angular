@@ -1,0 +1,26 @@
+# Récuperation de la dernière version de l'image de node
+FROM node:18.13.0
+
+# definie ou est l'application
+WORKDIR /Angular/AnguCD2/
+
+# récupération du code source de l'app
+COPY /Angular/AnguCD2/package*.json ./
+
+# installe npm
+RUN npm install 
+
+# installe angular
+RUN npm install -g @angular/cli
+
+# mets le code de l'applicaation dans l'image
+COPY ./Angular/AnguCD2/ .
+
+# sort sur le port 4200
+EXPOSE 4200
+
+# la commande que le contenaire vas utiliser
+ENTRYPOINT ng serve --host 0.0.0.0
+
+#docker build -t angular -f Dockerfile-Angular .
+#docker run -d --name Angular -p 4200:4200 angular

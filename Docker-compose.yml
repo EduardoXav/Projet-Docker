@@ -1,0 +1,31 @@
+#docker-compose de deux contenaires avec pour image Dockerfile-Angular et Dockerfile-Json
+#et creation d'un volume mydata 
+#docker-compose build
+#docker-compose up
+
+version: '3.8'
+
+services:
+  angular:
+    build:
+      context: .
+      dockerfile: ./Dockerfile-Angular
+    ports:
+      - 4200:4200
+    volumes:
+      - angularVolume:/Angular/AnguCD2/
+    depends_on:
+      - json
+
+  json:
+    build:
+      context: .
+      dockerfile: ./Dockerfile-Json
+    ports:
+      - 3000:3000
+    volumes:
+      - jsonVolume:/Angular/CDStore/
+
+volumes:
+  angularVolume:
+  jsonVolume:

@@ -1,0 +1,40 @@
+{
+    "CD": [
+        {
+            "id": 1,
+            "title": "The Dark Side of the Moon",
+            "author": "Pink Floyd",
+            "price": 10,
+            "thumbnail": "https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png",
+            "dateDeSortie": "1973-03-01",
+            "quantite": 10
+        },
+        {
+            "id": 2,
+            "title": "Madvillainy",
+            "author": "Mf Doom",
+            "price": 12,
+            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Madvillainy_cover.png/640px-Madvillainy_cover.png",
+            "dateDeSortie": "2004-04-27",
+            "quantite": 15
+        },
+        {
+            "id": 3,
+            "title": "The Eminem Show",
+            "author": "Eminem",
+            "price": 8,
+            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/TES_Simplified_Cover_-_Eminem.svg/640px-TES_Simplified_Cover_-_Eminem.svg.png",
+            "dateDeSortie": "2002-05-26",
+            "quantite": 20
+        },
+        {
+            "id": 4,
+            "title": "The wall",
+            "author": "Pink Floyd",
+            "price": 10,
+            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/The_Wall_Cover.svg/640px-The_Wall_Cover.svg.png",
+            "dateDeSortie": "1979-11-30",
+            "quantite": 10
+        }
+    ]
+}

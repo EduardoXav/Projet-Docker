@@ -1,0 +1,21 @@
+# Récuperation de la dernière version de l'image de json
+FROM node:18.13.0
+
+# --------------- DÉBUT COUCHE JSON-SERVE ----------------
+
+# mets le code de l'applicaation dans l'image
+COPY ./Angular/CDStore/ ./CDStore/
+
+# installe json-server
+RUN npm install -g json-server
+
+# sort sur le port 3000
+EXPOSE 3000
+
+# --------------- FIN COUCHE JSON-SERVE ----------------
+
+# la commande que le contenaire vas utiliser
+ENTRYPOINT json-server --watch CDStore/dbcd.json --host 0.0.0.0
+
+#docker build -t json -f Dockerfile-Json .
+#docker run -d --name Json -p 3000:3000 json
